@@ -5,25 +5,17 @@
     <body>
         
         <script>
-            // AND, OR, NOT
+            var sexo ='M';
 
-            var sexo = 'M', idade = 10;
-
-            // if (sexo === 'M' && idade >= 18) { // AND: && 
-            //     console.log('Ok');
+            // if (sexo === 'M') {
+            //     return 'Masculino';
+            // } else {
+            //     return 'Feminino';
             // }
+            // return (sexo === 'M') ? 'Masculino' : 'Feminino';
             
-            // if (sexo === 'M' || idade >= 18) { // OR: ||
-            //     console.log('Ok');
-            // }
-
-            // if (sexo !== 'M') { // NOT
-            //     console.log('Ok');
-            // }
-
-            var masculino = sexo === 'M';
-
-            console.log(masculino);
+            var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+            console.log(retorno);            
         </script>
     </body>
 </html>
