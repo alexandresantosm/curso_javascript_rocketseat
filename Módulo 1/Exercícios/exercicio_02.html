@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercício 02</title>
+    </head>
+    <body>
+        <script>
+            var par_lis = [];
+
+            function pares(inicio, fim) {
+               for (inicio; inicio <= fim; inicio++) {
+                    if ((inicio % 2) === 0) {
+                        par_lis.push(inicio);
+                    }
+               }
+            };
+
+            pares(32, 321)
+            console.log(par_lis);
+        </script>
+    </body>
+</html>
