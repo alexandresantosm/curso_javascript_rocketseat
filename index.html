@@ -5,18 +5,13 @@
     <body>
         
         <script>
-            // for, while
-
-            // for (i = 0; i <= 100; i++) { // Usamos quando sabemos a condição final, ou seja, neste caso sabemos quantas vezes ocorrerá a interação, que é até 100.
-            //     console.log(i);
-            // }        
-
-            var j = 219345872;
-            while (j > 50) { // Usamos quando não sabemos quantas vezes o bloco de código será executado.
-                console.log(j);
-
-                j /= 5;
+            function exibeHello() {
+                console.log('Hello World!');
             }
+
+            // setInterval(exibeHello, 1000); // Executa várias vezes um mesmo script em um intervalo de tempo. A cada 1 segundo a função exibeHello() é executada.
+
+            setTimeout(exibeHello, 5000); // Executa apenas uma vez um script dando um delay. Depois de 5 segundos a função exibeHello() será executada uma única vez. 
         </script>
     </body>
 </html>
