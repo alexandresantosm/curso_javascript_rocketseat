@@ -5,30 +5,25 @@
     <body>
         
         <script>
-            function retornaSexo(sexo) {
-                // M, F
-                // Masculino, Feminino
+            // AND, OR, NOT
 
-                // if (sexo === 'M') { // == Verifica o conteúdo da variável. === Verifica o conteúdo da variável e o tipo. 
-                //     return 'Masculino';
-                // } else if(sexo === 'F') {
-                //     return 'Feminino';
-                // } else {
-                //     return 'Outro';
-                // }
+            var sexo = 'M', idade = 10;
 
-                switch (sexo) {
-                    case 'M':
-                        return 'Masculino';
-                    case 'F':
-                        return 'Feminino';
-                    default:
-                        return 'Outro';
-                }
-            }
+            // if (sexo === 'M' && idade >= 18) { // AND: && 
+            //     console.log('Ok');
+            // }
+            
+            // if (sexo === 'M' || idade >= 18) { // OR: ||
+            //     console.log('Ok');
+            // }
 
-            var resultado = retornaSexo('M');
-            console.log(resultado);
+            // if (sexo !== 'M') { // NOT
+            //     console.log('Ok');
+            // }
+
+            var masculino = sexo === 'M';
+
+            console.log(masculino);
         </script>
     </body>
 </html>
