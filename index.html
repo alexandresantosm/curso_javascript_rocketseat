@@ -5,13 +5,29 @@
     <body>
         
         <script>
-            function soma(numero1, numero2) {
-                var resultado = numero1 + numero2;
+            function retornaSexo(sexo) {
+                // M, F
+                // Masculino, Feminino
 
-                return resultado;
+                // if (sexo === 'M') { // == Verifica o conteúdo da variável. === Verifica o conteúdo da variável e o tipo. 
+                //     return 'Masculino';
+                // } else if(sexo === 'F') {
+                //     return 'Feminino';
+                // } else {
+                //     return 'Outro';
+                // }
+
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
             }
 
-            var resultado = soma(1, 2);
+            var resultado = retornaSexo('M');
             console.log(resultado);
         </script>
     </body>
