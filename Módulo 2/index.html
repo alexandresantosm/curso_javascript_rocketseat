@@ -4,16 +4,24 @@
     </head>
     <body>
         <div id="app">
-          <!--
-            <button onclick="mostraAlerta()">Me pressione</button>
-            <button onmouseover="mostraAlerta()">Me pressione</button>
-          -->>
-          <input onkeypress="mostraAlerta()"/>
+          <input type="text" name="nome" id="nome"class="nome"/>
+          <button class="botao">Adicionar</button>
         </div>
+
         <script>
-            function mostraAlerta() {
-              alert('Botão foi clicado!')
-            }
+          // var inputElement = document.getElementById('nome'); // Retorna um elemento pelo id
+          // var inputElement = document.getElementsByTagName('input'); // Retorna uma lista de elementos com a tag HTML
+          // var inputElement = document.getElementsByClassName('nome'); // Retorna uma lista de elementos com a classe definida
+          // var inputElement = document.querySelector('div#app input'); // Permite percorrer a DOM e retornar um elemento
+          // var inputElement = document.querySelector('input[name=nome]'); // Retorna um elemento pela propriedade
+
+          var inputElement = document.querySelector('input[name=nome]');
+          var btnElement = document.querySelector('button.botao');
+
+          btnElement.onclick = function() {
+            var text = inputElement.value;
+            alert(text);
+          }
         </script>
     </body>
 </html>

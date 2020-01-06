@@ -21,7 +21,7 @@ Aluno: Alexandre
 * `4 aulas`
 
 [x] - Eventos inline.
-[] - Trabalhando com a DOM.
+[x] - Trabalhando com a DOM.
 [] - Lidando com elementos.
 [] - Alterando estilos.
 [] - Desafio.
