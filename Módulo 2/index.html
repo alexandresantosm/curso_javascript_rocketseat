@@ -4,24 +4,24 @@
     </head>
     <body>
         <div id="app">
-          <input type="text" name="nome" id="nome"class="nome"/>
-          <button class="botao">Adicionar</button>
+          <input id="nome"/>
         </div>
 
         <script>
-          // var inputElement = document.getElementById('nome'); // Retorna um elemento pelo id
-          // var inputElement = document.getElementsByTagName('input'); // Retorna uma lista de elementos com a tag HTML
-          // var inputElement = document.getElementsByClassName('nome'); // Retorna uma lista de elementos com a classe definida
-          // var inputElement = document.querySelector('div#app input'); // Permite percorrer a DOM e retornar um elemento
-          // var inputElement = document.querySelector('input[name=nome]'); // Retorna um elemento pela propriedade
+          var linkElement = document.createElement('a');
 
-          var inputElement = document.querySelector('input[name=nome]');
-          var btnElement = document.querySelector('button.botao');
+          linkElement.setAttribute('href', 'http://rocketseat.com.br');
+          linkElement.setAttribute('title', 'Site da Rocketseat');
 
-          btnElement.onclick = function() {
-            var text = inputElement.value;
-            alert(text);
-          }
+
+          var textElement = document.createTextNode('Acessar site da Rocketseat');
+          linkElement.appendChild(textElement);
+
+          var containerElement = document.querySelector('#app');
+          containerElement.appendChild(linkElement);
+
+          var inputElement = document.querySelector('#nome');
+          containerElement.removeChild(inputElement);
         </script>
     </body>
 </html>
