@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Exercício 02</title>
+  </head>
+  <body>
+    <div class="app">
+      <button id="btn-square">Criar quadrado</button>
+      <div id="div-square">
+
+      </div>
+    </div>
+
+    <script>
+      var buttonElement = document.querySelector('#btn-square');
+      var divElement = document.querySelector('#div-square');
+      var squareElement;
+
+      buttonElement.onclick = function() {
+        squareElement = document.createElement('div');
+        squareElement.setAttribute('class', 'square');
+        squareElement.setAttribute('onmouseover', 'squareColor()');
+
+        squareElement.style.width = 100;
+        squareElement.style.height = 100;
+        squareElement.style.margin = 3;
+        squareElement.style.backgroundColor = 'red';
+
+        divElement.appendChild(squareElement);
+      };
+
+      function squareColor() {
+        squareElement.style.backgroundColor = getRandomColor();
+      }
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+          return color;
+      };
+    </script>
+  </body>
+</html>

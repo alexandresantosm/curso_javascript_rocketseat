@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Exercício 01</title>
+  </head>
+  <body>
+    <div class="app">
+      <button id="btn-square">Criar quadrado</button>
+      <div id="div-square">
+
+      </div>
+    </div>
+
+    <script>
+      var buttonElement = document.querySelector('#btn-square');
+      var divElement = document.querySelector('#div-square');
+
+      buttonElement.onclick = function() {
+        var squareElement = document.createElement('div');
+        squareElement.setAttribute('class', 'square');
+
+        squareElement.style.width = 100;
+        squareElement.style.height = 100;
+        squareElement.style.margin = 3;
+        squareElement.style.backgroundColor = 'red';
+
+        divElement.appendChild(squareElement);
+      }
+    </script>
+  </body>
+</html>

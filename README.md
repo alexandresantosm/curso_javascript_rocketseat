@@ -22,6 +22,6 @@ Aluno: Alexandre
 
 - [x] Eventos inline.
 - [x] Trabalhando com a DOM.
-- [] Lidando com elementos.
-- [] Alterando estilos.
+- [x] Lidando com elementos.
+- [x] Alterando estilos.
 - [] Desafio.
