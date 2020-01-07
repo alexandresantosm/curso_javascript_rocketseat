@@ -31,7 +31,7 @@ Aluno: Alexandre
 
 - [x] Estrutura do app.
 - [x] Iniciando aplicação.
-- [ ] Renderizando  TODOS.
-- [ ] Criando TODOS.
+- [x] Renderizando  TODOS.
+- [x] Criando TODOS.
 - [ ] Excluindo TODOS.
 - [ ] Salvando no storage.
