@@ -24,4 +24,14 @@ Aluno: Alexandre
 - [x] Trabalhando com a DOM.
 - [x] Lidando com elementos.
 - [x] Alterando estilos.
-- [] Desafio.
+- [x] Desafio.
+
+### App de TODOS
+* `6 aulas`
+
+- [ ] Estrutura do app.
+- [ ] Iniciando aplicação.
+- [ ] Renderizando  TODOS.
+- [ ] Criando TODOS.
+- [ ] Excluindo TODOS.
+- [ ] Salvando no storage.
