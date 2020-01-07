@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <div class="app">
+      <input type="text" name="nome"/>
+      <button onclick="adicionar()">Adicionar</button>
+    </div>
+
+    <script>
+      var nomes = [],
+          inputElement = document.getElementsByName('nome')[0],
+          ulElement = document.createElement('ul'),
+          textElement = '';
+
+      function adicionar() {
+        var liElement = document.createElement('li');
+        textElement = document.createTextNode(inputElement.value);
+        liElement.appendChild(textElement);
+        ulElement.appendChild(liElement);
+        document.body.appendChild(ulElement);
+
+        limparImput();
+      };
+
+      function limparImput() {
+        textElement = '';
+        inputElement.value = textElement;
+      }
+    </script>
+  </body>
+</html>

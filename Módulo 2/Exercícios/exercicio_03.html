@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Exercício 03</title>
+  </head>
+  <body>
+    <div class="app">
+      <p>Lista de nomes</p>
+
+    </div>
+
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var appElement = document.querySelector('div.app');
+      var ulElement = document.createElement('ul');
+      var liElement;
+      var textElement;
+
+      for (i = 0; i < nomes.length; i++) {
+        liElement = document.createElement('li');
+        textElement = document.createTextNode(nomes[i]);
+        liElement.appendChild(textElement);
+        ulElement.appendChild(liElement);
+      }
+
+      appElement.appendChild(ulElement);
+    </script>
+  </body>
+</html>
