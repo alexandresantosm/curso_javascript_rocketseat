@@ -29,8 +29,8 @@ Aluno: Alexandre
 ### App de TODOS
 * `6 aulas`
 
-- [ ] Estrutura do app.
-- [ ] Iniciando aplicação.
+- [x] Estrutura do app.
+- [x] Iniciando aplicação.
 - [ ] Renderizando  TODOS.
 - [ ] Criando TODOS.
 - [ ] Excluindo TODOS.
