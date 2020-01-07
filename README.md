@@ -34,4 +34,4 @@ Aluno: Alexandre
 - [x] Renderizando  TODOS.
 - [x] Criando TODOS.
 - [x] Excluindo TODOS.
-- [ ] Salvando no storage.
+- [x] Salvando no storage.
