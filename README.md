@@ -33,5 +33,5 @@ Aluno: Alexandre
 - [x] Iniciando aplicação.
 - [x] Renderizando  TODOS.
 - [x] Criando TODOS.
-- [ ] Excluindo TODOS.
+- [x] Excluindo TODOS.
 - [ ] Salvando no storage.
