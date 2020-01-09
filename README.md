@@ -4,6 +4,7 @@ Aluno: Alexandre
 
 ### Introdução JavaScript
 * `10 aulas`
+* `1 desafio`
 
 - [x] Introdução.
 - [x] Configurando ambiente.
@@ -19,6 +20,7 @@ Aluno: Alexandre
 
 ### Manipulando a DOM
 * `4 aulas`
+* `1 desafio`
 
 - [x] Eventos inline.
 - [x] Trabalhando com a DOM.
@@ -35,3 +37,12 @@ Aluno: Alexandre
 - [x] Criando TODOS.
 - [x] Excluindo TODOS.
 - [x] Salvando no storage.
+
+### JavaScript assíncrono
+* `3 aulas`
+* `1 desafio`
+
+- [x] Requisições AJAX.
+- [ ] Promises.
+- [ ] Utilizando Axios.
+- [ ] Desafio.
