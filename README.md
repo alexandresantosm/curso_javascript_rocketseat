@@ -43,6 +43,6 @@ Aluno: Alexandre
 * `1 desafio`
 
 - [x] Requisições AJAX.
-- [ ] Promises.
+- [x] Promises.
 - [ ] Utilizando Axios.
 - [ ] Desafio.
