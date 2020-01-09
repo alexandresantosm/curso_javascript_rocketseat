@@ -44,5 +44,5 @@ Aluno: Alexandre
 
 - [x] Requisições AJAX.
 - [x] Promises.
-- [ ] Utilizando Axios.
+- [x] Utilizando Axios.
 - [ ] Desafio.
