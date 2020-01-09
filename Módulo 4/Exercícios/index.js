@@ -1,17 +1,29 @@
-function checaIdade(idade) {
-  return new Promise(function(resolve, reject) {
-    if (idade >= 18) {
-      resolve();
-    } else {
-      reject('Erro na requisição');
-    }
-  });
+var inputElement = document.querySelector('#app input');
+var buttonElement = document.querySelector('#app button');
+var listElement = document.querySelector('#app ul');
+
+function findRepository() {
+  axios.get(' https://api.github.com/users/'+ inputElement.value +'/repos')
+    .then(function(response) {
+      var repositorys = response.data;
+
+      for (repository of repositorys) {
+        var repositoryElement = document.createElement('li');
+        var repositoryText = document.createTextNode(repository.name);
+
+        repositoryElement.appendChild(repositoryText);
+        listElement.appendChild(repositoryElement);
+
+      }
+      console.log(response.data);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+  clearInput();
 }
 
-checaIdade(20)
-  .then(function(response) {
-    console.log('Maior que 18');
-  })
-  .catch(function(error) {
-    console.log('Menor que 18');
-  });
+function clearInput() {
+  inputElement.value = '';
+}
